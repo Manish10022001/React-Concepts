@@ -1,0 +1,55 @@
+npm install @vitejs/plugin-react --save-dev
+
+cental la srv gosht 
+
+PROP DRILLING - prop pass karit rahn
+
+central la gosht thevay chi ahi te jeval lagte teva access karayach
+
+
+acces 
+request acees karnya sathi
+
+new project          
+get request = swata data nahi pathvat tri data milto
+
+Thype of request
+1. Get - jeva data pahije pn data nahi pathvay cha
+
+2.Post:   server la data send karnar  aahe . navin data takaycha aahe to post use krto eg. registration 
+
+like post , it alo puts data to server
+,perform operation on existing data. eg.registration in done, but you have to modify the form or values 
+
+
+app.jsx
+const handleGetData =() =>{
+	clog("App loaded")
+	data gheoon anay cha aahe  so we use
+fetch() and take url
+
+let url="kkkk"  
+
+and pass url to 
+fetch and send som response
+
+CONST RESPONSE = AWAIT FETCH(URL) as fetch is acyncronous we have to give AWAIT befor feth
+
+CONST RESdATA = AWAIT RESPONSE.JSON();
+CONSOLE.LOG(RESdATA)
+} he call karai ch jevva 
+tya sathi useeffect use krto
+
+useEffect( () =>{
+handleGetData();},[]};
+
+NOW WE DO ALLL THIS USING AXIOS
+SO we import axios
+
+
+LET RESPONSE = AWAIT AXIOS.
+
+
+
+CONST HANDLEGETDATA = SYSNC() =>{
+LET URL = SITE
