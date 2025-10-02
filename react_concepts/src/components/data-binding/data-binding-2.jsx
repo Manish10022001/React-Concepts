@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 export default function DataBindingTwo() {
   const [price, setPrice] = useState(2334343.33);
 
-  useEffect(() => {v
+  useEffect(() => {
     setPrice(111111.11);
   }, []);
   return (
