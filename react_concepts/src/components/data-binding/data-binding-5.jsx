@@ -20,7 +20,7 @@ export default function DataBindingWithArrays() {
         ))}
       </nav>
 
-      <ol className="list-unstyled checklistt">
+      <ol className="list-unstyled checklist">
         {categories.map((category, index) => (
           <li key={index} className="d-flex m-2">
             <input type="checkbox" />
@@ -29,7 +29,11 @@ export default function DataBindingWithArrays() {
         ))}
       </ol>
       <select>
-        {categories.map((category)=><option key={category} value={category} className="d-flex">{category}</option>)}
+        {categories.map((category) => (
+          <option key={category} value={category} className="d-flex">
+            {category}
+          </option>
+        ))}
       </select>
     </div>
   );
