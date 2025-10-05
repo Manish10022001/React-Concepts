@@ -4,7 +4,8 @@ import "./index.css";
 import App from "./App.jsx";
 import LoginComponent from "./components/login/login.component.jsx";
 import DataBindingWithArrays from "./components/data-binding/data-binding-5.jsx";
-import AjaxWithFetch from "./components/ajax/ajax-2.jsx";
+import AjaxWithjQuery from "./components/ajax/ajax-3.jsx";
+import AxiosOne from "./components/axios/axios-1.jsx";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap";
@@ -14,6 +15,7 @@ createRoot(document.getElementById("root")).render(
     {/* <App /> */}
     {/* <LoginComponent /> */}
     {/* <DataBindingWithArrays /> */}
-    <AjaxWithFetch />
+    {/* <AjaxWithjQuery /> */}
+    <AxiosOne />
   </StrictMode>
 );
