@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Generative AI",
+    "rating": 5,
+    "start": "12 Oct 2025",
+    "faculty": "Mr. Abc",
+    "duration": "3 months",
+    "image": "gnerative-ai.png"
+  },
+  {
+    "title": "Cyber Security",
+    "rating": 4,
+    "start": "24 oct 2025",
+    "faculty": "Mr Pqr",
+    "duration": "4 months",
+    "image": "cybersecurity.png"
+  },
+  {
+    "title": "Data Science and AI",
+    "rating": 4.5,
+    "start": "14 oct 2025",
+    "faculty": "Mr weirr",
+    "duration": "4 months",
+    "image": "datascienceandai.png"
+  },
+  {
+    "title": "Java Full Stack",
+    "rating": 4.5,
+    "start": "30 oct 2025",
+    "faculty": "Mr dkjkskdsd",
+    "duration": "4 months",
+    "image": "javafullstack.png"
+  }
+]
