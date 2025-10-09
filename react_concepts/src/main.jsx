@@ -9,7 +9,7 @@ import AxiosOne from "./components/axios/axios-1.jsx";
 import Courses from "./components/axios/courses.jsx";
 import NestedDemo from "./components/nested-demo/nested-demo.jsx";
 
-import EventDemo from "./components/event/event-demo-1.jsx";
+import MouseEventOne from "./components/event/event-demo-2.jsx";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap";
@@ -23,6 +23,6 @@ createRoot(document.getElementById("root")).render(
     {/* <AxiosOne /> */}
     {/* <Courses /> */}
     {/* <NestedDemo /> */}
-    <EventDemo />
+    <MouseEventOne />
   </StrictMode>
 );
