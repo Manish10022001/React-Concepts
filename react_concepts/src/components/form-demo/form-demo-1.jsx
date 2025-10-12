@@ -26,7 +26,7 @@ export default function FormDemo() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log(user);
-  }D
+  }
   return (
     <div className="container-fluid">
       <form onSubmit={handleSubmit}>
