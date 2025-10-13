@@ -5,6 +5,7 @@ export default function FormDemo() {
       UserName: "",
       Age: 0,
       City: "",
+      Gender: "",
     },
     onSubmit: (user) => {
       console.log(user);
@@ -30,6 +31,24 @@ export default function FormDemo() {
               <option>Pune</option>
               <option>Delhi</option>
             </select>
+          </dd>
+
+          <dt>Gender </dt>
+          <dd>
+            <input
+              onChange={formik.handleChange}
+              type="radio"
+              name="Gender"
+              value="Male"
+            />
+            <label>Male</label>
+            <input
+              onChange={formik.handleChange}
+              type="radio"
+              name="Gender"
+              value="Female"
+            />
+            <label>Female</label>
           </dd>
         </dl>
         <button type="submit">Submit</button>
