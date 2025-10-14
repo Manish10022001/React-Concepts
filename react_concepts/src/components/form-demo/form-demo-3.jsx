@@ -1,48 +1,51 @@
 import { useFormik } from "formik";
-export default function FormikValidation() {
-  function validateUser(user) {
-    console.log("Validation", user);
-    var errors = { UserName: "", Age: "", Mobile: "", City: "", Gender: "" };
 
-    if (user.UserName.length === 0) {
+export default function FormikValidation() {
+  function validateUser(formData) {
+    console.log(formData); // Keep the log here temporarily for debugging purposes
+    const errors = { UserName: "", Age: "", Mobile: "", City: "", Gender: "" };
+
+    if (formData.UserName.length === 0) {
       errors.UserName = "User Name required";
     } else {
-      if (user.UserName.length < 4) {
+      if (formData.UserName.length < 4) {
         errors.UserName = "Name too short";
       } else {
         errors.UserName = "";
       }
     }
 
-    if (user.Mobile.length === 0) {
+    if (formData.Mobile.length === 0) {
       errors.Mobile = "Mobile number required";
     } else {
-      if (user.Mobile.match(/\+91\d{10}/)) {
+      if (formData.Mobile.match(/\+91\d{10}/)) {
         errors.Mobile = "";
       } else {
         errors.Mobile = "Invalid Mobile number";
       }
     }
 
-    if (isNaN(user.Age)) {
+    if (isNaN(formData.Age)) {
       errors.Age = "age must be a number";
     } else {
       errors.Age = "";
     }
 
-    if (user.City === "-1") {
+    if (formData.City === "-1") {
       errors.City = "Please select your city";
     } else {
       errors.City = "";
     }
 
-    if (user.Gender === "") {
-      errors.Gender = "pleae select a gender";
+    if (formData.Gender === "") {
+      errors.Gender = "Please select a gender";
     } else {
       errors.Gender = "";
     }
+
     return errors;
   }
+
   const formik = useFormik({
     initialValues: {
       UserName: "",
@@ -53,8 +56,8 @@ export default function FormikValidation() {
     },
     validate: validateUser,
 
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: (user) => {
+      console.log(user); // Log user data when the form is successfully submitted
     },
   });
 
@@ -91,7 +94,7 @@ export default function FormikValidation() {
           </dd>
           <dd className="text-danger">{formik.errors.City}</dd>
 
-          <dt>Gender </dt>
+          <dt>Gender</dt>
           <dd>
             <input
               onChange={formik.handleChange}
