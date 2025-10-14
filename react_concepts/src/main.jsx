@@ -9,8 +9,7 @@ import AxiosOne from "./components/axios/axios-1.jsx";
 import Courses from "./components/axios/courses.jsx";
 import NestedDemo from "./components/nested-demo/nested-demo.jsx";
 import MouseEventTwo from "./components/event/event-demo-3.jsx";
-
-import IntervalDemo from "./components/api/IntervalDemo.jsx";
+import FormikSpreadApproach from "./components/form-demo/form-demo-5.jsx";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap";
@@ -25,6 +24,6 @@ createRoot(document.getElementById("root")).render(
     {/* <Courses /> */}
     {/* <NestedDemo /> */}
     {/* <MouseEventTwo /> */}
-    <IntervalDemo />
+    <FormikSpreadApproach />
   </StrictMode>
 );
