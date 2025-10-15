@@ -8,8 +8,9 @@ import AjaxWithjQuery from "./components/ajax/ajax-3.jsx";
 import AxiosOne from "./components/axios/axios-1.jsx";
 import Courses from "./components/axios/courses.jsx";
 import NestedDemo from "./components/nested-demo/nested-demo.jsx";
-
-import TimerEventsSetInterval from "./components/event/event-demo-9.jsx";
+// import MouseEventTwo from "./components/event/event-demo-3.jsx";
+// import FormikValidationState from "./components/form-demo/form-demo-7.jsx";
+import ClipboardEvents from "./components/event/event-demo-10.jsx";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap";
@@ -23,6 +24,8 @@ createRoot(document.getElementById("root")).render(
     {/* <AxiosOne /> */}
     {/* <Courses /> */}
     {/* <NestedDemo /> */}
-    <TimerEventsSetInterval />
+    {/* <MouseEventTwo /> */}
+    {/* <FormikValidationState /> */}
+    <ClipboardEvents />
   </StrictMode>
 );
