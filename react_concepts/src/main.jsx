@@ -11,6 +11,7 @@ import NestedDemo from "./components/nested-demo/nested-demo.jsx";
 // import MouseEventTwo from "./components/event/event-demo-3.jsx";
 // import FormikValidationState from "./components/form-demo/form-demo-7.jsx";
 import ClipboardEvents from "./components/event/event-demo-10.jsx";
+import FakeStore from "./components/fakestoreapi/fakestoreapi.jsx";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap";
