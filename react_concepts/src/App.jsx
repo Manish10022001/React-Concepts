@@ -7,18 +7,29 @@ import FocusUseRef from "./IPComponents/useRef/FocusUseRef.jsx";
 import TimerUseRef from "./IPComponents/useRef/TimerUseRef.jsx";
 import ReferenceValueUseRef from "./IPComponents/useRef/ReferenceValueUseRef.jsx";
 import UseCallbackExampleOne from "./IPComponents/useCallback/UseCallbackExampleOne.jsx";
+import ExpensiveCalculationComponent from "./IPComponents/useMemo/ExpensiveCalculationComponent.jsx";
 function App() {
   return (
     <>
      <ControlledComponent />
       <UncontrolledComponent />
+
+      {/* useContext */}
       <Context />
       <ContextPtifall />
+
       <UseEffectVsUseLayoutEffect />
+
+      {/* useRef */}
       <FocusUseRef />
       <TimerUseRef />
       <ReferenceValueUseRef />
+
+      {/* useCallback */}
       <UseCallbackExampleOne />
+      
+      {/* useMemo */}
+      <ExpensiveCalculationComponent num={85}/>
     </>
   )
 }
