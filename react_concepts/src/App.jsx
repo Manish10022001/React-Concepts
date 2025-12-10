@@ -8,6 +8,7 @@ import TimerUseRef from "./IPComponents/useRef/TimerUseRef.jsx";
 import ReferenceValueUseRef from "./IPComponents/useRef/ReferenceValueUseRef.jsx";
 import UseCallbackExampleOne from "./IPComponents/useCallback/UseCallbackExampleOne.jsx";
 import ExpensiveCalculationComponent from "./IPComponents/useMemo/ExpensiveCalculationComponent.jsx";
+import CounterUseReducer from "./IPComponents/useReducer/CounterUseReducer.jsx";
 function App() {
   return (
     <>
@@ -30,6 +31,9 @@ function App() {
       
       {/* useMemo */}
       <ExpensiveCalculationComponent num={85}/>
+
+      {/* useReducer */}
+      <CounterUseReducer />
     </>
   )
 }
