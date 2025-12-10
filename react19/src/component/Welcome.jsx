@@ -1,6 +1,8 @@
 //named componenet: we cannot give other name has to give the function name only
-export function Welcome(){
+
+//prop
+export function Welcome({name,alias}){
     return(
-        <h1>Welcome! Manish</h1>
+        <h1>Welcome! {name} a.k.a {alias}</h1>
     )
 }
