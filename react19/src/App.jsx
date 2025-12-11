@@ -1,5 +1,6 @@
 import './App.css'
 import Button from './component/Button'
+import { CardWrapper } from './component/CardWrapper'
 import { Greeting } from './component/Greeting'
 import { Hello, HelloWithoutJsx } from './component/Hello'
 import { Product } from './component/Product'
@@ -9,7 +10,14 @@ import { Welcome } from './component/Welcome'
 function App() {
   return (
     <>
+      <CardWrapper title="User Profile">
+        <p>Bruce Wayne</p>
+        <p>batman@gmail.com</p>
+        <button>Edit Profile</button>
+      </CardWrapper>
+      
       <UserCard name="Bruce" age="33" city="Gotham" email="batman@gmail.com"/>
+
       <Greeting name="Bruce" message="Good Morning"/>
       <Greeting name="Clark"/>
       <Greeting message="Welcome"/>
