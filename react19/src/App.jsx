@@ -8,12 +8,15 @@ import { UserCard } from './component/UserInfo'
 import { Welcome } from './component/Welcome'
 import { UserDetails } from './conditionalRendering/UserDetails'
 import { ProductList } from './renderingList/ProductList'
+import { Alert } from './stylingReactComponent/Alert'
 
 function App() {
   return (
     <>
+      <Alert>Your changes have been saved</Alert>
+      <Alert type="error">Your changes have not been saved</Alert>
       <ProductList />
-      
+
       <UserDetails name="Bruce" isOnline={true} isPremium={true} isNewUser={true} role="admin"/>
       <UserDetails name="Clark" isOnline={true} hideOffline={true} role="moderator"/>
 
