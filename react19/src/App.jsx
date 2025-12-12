@@ -7,12 +7,19 @@ import { Product } from './component/Product'
 import { UserCard } from './component/UserInfo'
 import { Welcome } from './component/Welcome'
 import { UserDetails } from './conditionalRendering/UserDetails'
+import { Contact } from './eventHandling/Contact'
+import { CustomButtons } from './eventHandling/CustomButtons'
+import { Newsletter } from './eventHandling/Newsletteer'
 import { ProductList } from './renderingList/ProductList'
 import { Alert } from './stylingReactComponent/Alert'
 
 function App() {
   return (
     <>
+      <Contact />
+      <Newsletter />
+      <CustomButtons text="like"/>
+      <CustomButtons text="bookmark"/>
       <Alert>Your changes have been saved</Alert>
       <Alert type="error">Your changes have not been saved</Alert>
       <ProductList />
