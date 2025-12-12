@@ -1,4 +1,4 @@
-export function UserDetails({name, isOnline, hideOffline}){
+export function UserDetails({name, isOnline, hideOffline, isPremium, isNewUser}){
     //if user is offline we do not want to show it on screen
     if(hideOffline && !isOnline){
         return null;
@@ -28,7 +28,11 @@ export function UserDetails({name, isOnline, hideOffline}){
     //Ternary Operator
     return(
         <div>
-            <h3>{name}</h3>
+            <h3>
+                {name}
+                {isPremium && <span>⭐</span>} 
+                {isNewUser && <span>🎉</span>}
+            </h3>
             <span>{isOnline ? "🟢 Online":"🔴 Offline" }</span>
             <p>{isOnline? "Avaialble to chat" : "Not available to chat"}</p>
             {isOnline ? (
