@@ -7,10 +7,13 @@ import { Product } from './component/Product'
 import { UserCard } from './component/UserInfo'
 import { Welcome } from './component/Welcome'
 import { UserDetails } from './conditionalRendering/UserDetails'
+import { ProductList } from './renderingList/ProductList'
 
 function App() {
   return (
     <>
+      <ProductList />
+      
       <UserDetails name="Bruce" isOnline={true} isPremium={true} isNewUser={true} role="admin"/>
       <UserDetails name="Clark" isOnline={true} hideOffline={true} role="moderator"/>
 
