@@ -11,8 +11,8 @@ import { UserDetails } from './conditionalRendering/UserDetails'
 function App() {
   return (
     <>
-      <UserDetails name="Bruce" isOnline={true} isPremium={true} isNewUser={true}/>
-      <UserDetails name="Clark" isOnline={false} hideOffline={true}/>
+      <UserDetails name="Bruce" isOnline={true} isPremium={true} isNewUser={true} role="admin"/>
+      <UserDetails name="Clark" isOnline={true} hideOffline={true} role="moderator"/>
 
       <CardWrapper title="User Profile">
         <p>Bruce Wayne</p>
