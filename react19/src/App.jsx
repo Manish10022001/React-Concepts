@@ -17,7 +17,7 @@ function App() {
       <CardWrapper title="User Profile">
         <p>Bruce Wayne</p>
         <p>batman@gmail.com</p>
-        <Button>Edit Profile</Button>
+        <button>Edit Profile</button>
       </CardWrapper>
       
       <UserCard name="Bruce" age="33" city="Gotham" email="batman@gmail.com"/>
