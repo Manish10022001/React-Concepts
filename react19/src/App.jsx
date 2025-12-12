@@ -6,14 +6,18 @@ import { Hello, HelloWithoutJsx } from './component/Hello'
 import { Product } from './component/Product'
 import { UserCard } from './component/UserInfo'
 import { Welcome } from './component/Welcome'
+import { UserDetails } from './conditionalRendering/UserDetails'
 
 function App() {
   return (
     <>
+      <UserDetails name="Bruce" isOnline={true}/>
+      <UserDetails name="Clark" isOnline={false} hideOffline={true}/>
+
       <CardWrapper title="User Profile">
         <p>Bruce Wayne</p>
         <p>batman@gmail.com</p>
-        <button>Edit Profile</button>
+        <Button>Edit Profile</Button>
       </CardWrapper>
       
       <UserCard name="Bruce" age="33" city="Gotham" email="batman@gmail.com"/>
