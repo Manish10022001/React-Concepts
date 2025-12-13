@@ -12,6 +12,8 @@ import { CustomButtons } from './eventHandling/CustomButtons'
 import { Newsletter } from './eventHandling/Newsletteer'
 import { ProductList } from './renderingList/ProductList'
 import { Alert } from './stylingReactComponent/Alert'
+import { Counter } from './Hooks/useState/Counter'
+import { LoginCard } from './Hooks/useState/LoginCard'
 
 function App() {
   return (
@@ -26,6 +28,11 @@ function App() {
 
       <UserDetails name="Bruce" isOnline={true} isPremium={true} isNewUser={true} role="admin"/>
       <UserDetails name="Clark" isOnline={true} hideOffline={true} role="moderator"/>
+      <Counter />
+      <LoginCard />
+
+      <UserDetails name="Bruce" isOnline={true}/>
+      <UserDetails name="Clark" isOnline={false} hideOffline={true}/>
 
       <CardWrapper title="User Profile">
         <p>Bruce Wayne</p>
