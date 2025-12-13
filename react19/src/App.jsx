@@ -7,10 +7,15 @@ import { Product } from './component/Product'
 import { UserCard } from './component/UserInfo'
 import { Welcome } from './component/Welcome'
 import { UserDetails } from './conditionalRendering/UserDetails'
+import { Counter } from './Hooks/useState/Counter'
+import { LoginCard } from './Hooks/useState/LoginCard'
 
 function App() {
   return (
     <>
+      <Counter />
+      <LoginCard />
+
       <UserDetails name="Bruce" isOnline={true}/>
       <UserDetails name="Clark" isOnline={false} hideOffline={true}/>
 
