@@ -14,10 +14,12 @@ import { ProductList } from './renderingList/ProductList'
 import { Alert } from './stylingReactComponent/Alert'
 import { Counter } from './Hooks/useState/Counter'
 import { LoginCard } from './Hooks/useState/LoginCard'
+import { SimpleCounter } from './Hooks/useState/SimpleCounter'
 
 function App() {
   return (
     <>
+      <SimpleCounter />
       <Contact />
       <Newsletter />
       <CustomButtons text="like"/>
