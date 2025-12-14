@@ -9,10 +9,12 @@ import { Welcome } from './component/Welcome'
 import { UserDetails } from './conditionalRendering/UserDetails'
 import { Counter } from './Hooks/useState/Counter'
 import { LoginCard } from './Hooks/useState/LoginCard'
+import { SimpleCounter } from './Hooks/useState/SimpleCounter'
 
 function App() {
   return (
     <>
+      <SimpleCounter />
       <Counter />
       <LoginCard />
 
