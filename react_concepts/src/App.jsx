@@ -11,9 +11,11 @@ import ExpensiveCalculationComponent from "./IPComponents/useMemo/ExpensiveCalcu
 import CounterUseReducer from "./IPComponents/useReducer/CounterUseReducer.jsx";
 import AppContext from "./IPComponents/useContext/AppContext.jsx";
 import UseCallbackParent from "./IPComponents/useCallback/UseCallbackParent.jsx";
+import { UseMemoDoubleNumbers } from "./IPComponents/useMemo/UseMemoDoubleNumbers.jsx";
 function App() {
   return (
     <>
+      <UseMemoDoubleNumbers />
       <UseCallbackParent />
       <AppContext />
      <ControlledComponent />
