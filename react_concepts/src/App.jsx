@@ -9,9 +9,11 @@ import ReferenceValueUseRef from "./IPComponents/useRef/ReferenceValueUseRef.jsx
 import UseCallbackExampleOne from "./IPComponents/useCallback/UseCallbackExampleOne.jsx";
 import ExpensiveCalculationComponent from "./IPComponents/useMemo/ExpensiveCalculationComponent.jsx";
 import CounterUseReducer from "./IPComponents/useReducer/CounterUseReducer.jsx";
+import AppContext from "./IPComponents/useContext/AppContext.jsx";
 function App() {
   return (
     <>
+      <AppContext />
      <ControlledComponent />
       <UncontrolledComponent />
 
