@@ -10,9 +10,11 @@ import UseCallbackExampleOne from "./IPComponents/useCallback/UseCallbackExample
 import ExpensiveCalculationComponent from "./IPComponents/useMemo/ExpensiveCalculationComponent.jsx";
 import CounterUseReducer from "./IPComponents/useReducer/CounterUseReducer.jsx";
 import AppContext from "./IPComponents/useContext/AppContext.jsx";
+import UseCallbackParent from "./IPComponents/useCallback/UseCallbackParent.jsx";
 function App() {
   return (
     <>
+      <UseCallbackParent />
       <AppContext />
      <ControlledComponent />
       <UncontrolledComponent />
