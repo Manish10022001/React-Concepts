@@ -12,9 +12,11 @@ import CounterUseReducer from "./IPComponents/useReducer/CounterUseReducer.jsx";
 import AppContext from "./IPComponents/useContext/AppContext.jsx";
 import UseCallbackParent from "./IPComponents/useCallback/UseCallbackParent.jsx";
 import { UseMemoDoubleNumbers } from "./IPComponents/useMemo/UseMemoDoubleNumbers.jsx";
+import UseLayoutEffectUse from "./IPComponents/useLayoutEffect/UseLayoutEffectUse.jsx";
 function App() {
   return (
     <>
+      <UseLayoutEffectUse />
       <UseMemoDoubleNumbers />
       <UseCallbackParent />
       <AppContext />
